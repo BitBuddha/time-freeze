@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIME-FREEZE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="home.html"><img src="logo.png" class="logo" /></a>
+        <nav>
+          <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </nav>
+        <img src="menu-icon.png" class="menu" onclick="togglemenu()" />
+      </div>
+
+      <div class="row"></div>
+      <div class="mail">
+<h1>
+
+  bei fragen eine E-Mail an: <br> time.freeze.service@gmail.com
+</h1>
+      </div>
+      <div class="anschrift">
+Anschrift: blöde Straße -24
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      var menu = document.getElementById("menu");
+      var body = document.getElementById("body");
+      menuList.style.maxHeight = "0vh";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0vh") {
+          menuList.style.maxHeight = "100vh";
+        } else {
+          menuList.style.maxHeight = "0vh";
+        }
+      }
+    </script>
+  </body>
+</html>
